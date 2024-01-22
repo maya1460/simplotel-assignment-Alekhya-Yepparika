@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Order</a>
+            <a href="#">Food</a>
+            <a href="#">Restaurant</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact Us</a>
+            <a href="#">&#9776;</a>
+        </nav>
+    </div>
+    <div class="first-container">
+
+        <div class="content-container">
+            <h2>LOREM IPSUM</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                id est vitae dolor rhoncus tristique. Maecenas metus quam,
+                rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+                dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+                Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+                Sed pulvinar, massa ac porta viverra.
+            </p>
+            <button>Click Me</button>
+        </div>
+        <div class="image-container">
+            <img src="https://oxyvalleyresorts.com/wp-content/uploads/elementor/thumbs/gallery-Dinning-06-2-q4r3fo021gzjreuql0rbxvyizyraj3x2g069p8z5po.jpg" alt="Image">
+        </div>
+    </div>
+    <section>
+        <div class="second-container">
+            <div class="images-container">
+                <img src="https://images.pexels.com/photos/6752433/pexels-photo-6752433.jpeg" alt="Image 1">
+                <img src="https://images.pexels.com/photos/6141651/pexels-photo-6141651.jpeg" alt="Image 2">
+            </div>
+            <div class="single-image-container">
+                <img src="https://static.tnn.in/photo/msid-103508573/103508573.jpg" alt="Image 3">
+            </div>
+            <div class="last-content-container">
+                <p>
+                    LOREM IPSUM
+                </p>
+                <h2>LOREM IPSUM SET ADEMIR</h2>
+                <button>Click <span class="arrow">&#10140;</span></button>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FF7171;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+#menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    #menu-checkbox {
+        display: none;
+    }
+
+    #menu-checkbox:checked+label+nav {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .images-container,
+    .single-image-container,
+    .last-content-container {
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .content-container {
+        max-width: 100%;
+    }
+}
+
+
+.first-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #FFF5AF, #FFF5AF, #FFE1C2, #FFD3D0, #FFB8EB);
+}
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+    order: 2;
+    margin: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.content-container {
+    flex: 1;
+    max-width: 50%;
+    order: 1;
+    margin: 10px;
+}
+
+.content-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF7171;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content-container button:hover {
+    background-color: #2980b9;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.second-container {
+    display: flex;
+    background: linear-gradient(to right, #FFF5AF, #FFF5AF, #FFE1C2, #FFD3D0, #FFB8EB);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.images-container {
+
+    flex: 1;
+    max-width: 30%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-container img {
+
+    width: 100%;
+    height: 38vh;
+    margin-bottom: 5px;
+}
+
+.single-image-container {
+
+    flex: 1;
+    max-width: 30%;
+    order: 2;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.single-image-container img {
+
+    width: 100%;
+    height: 78vh;
+    border-radius: 8px;
+}
+
+.last-content-container {
+    padding: 8px;
+    background-color: #FF7171;
+    flex: 1;
+    max-width: 30%;
+    order: 3;
+    margin: 10px;
+}
+
+.last-content-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.last-content-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.last-content-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF7171;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.last-content-container button:hover {
+    background-color: #FF7171;
+}
+
+.arrow {
+
+    font-size: 23px;
+}
+</style>
